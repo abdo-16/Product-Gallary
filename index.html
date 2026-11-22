@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="fa-solid fa-store nav-logo"></i> Product Gallery
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header id="home" class="hero text-center">
+    <h1 class="title">Product Gallery</h1>
+    <p class="subtitle">Browse products fetched live from an API, and click any one to view it full size.</p>
+    <a href="#products" class="btn btn-primary mt-3"> Products</a>
+</header>
+   <section id="products" class="pt-4">
+        <div class="container-fluid px-4">
+            <div id="row" class="row g-4"></div>
+        </div>
+    </section>
+    <section id="about" class="info-section">
+    <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="row align-items-center g-4">
+            <div class="col-md-7">
+                <p>
+                    Hi, I'm <strong>ِAbdallah</strong>, a front-end developer in training.
+                    This project is a product gallery built with vanilla JavaScript. It fetches
+                    data from a public API using <code>async/await</code> and renders it dynamically,
+                    with a custom lightbox that supports keyboard navigation.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <h3 class="skills-title">Built with</h3>
+                <span class="badge skill">HTML5</span>
+                <span class="badge skill">CSS3</span>
+                <span class="badge skill">Bootstrap 5</span>
+                <span class="badge skill">JavaScript</span>
+                <span class="badge skill">Fetch API</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="info-section alt">
+    <div class="container text-center">
+        <h2 class="section-title">Contact</h2>
+        <p class="mb-4">Want to work together or just say hi?</p>
+        <div class="contact-links">
+            <a href="abdallahelfkey870@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://github.com/abdo-16" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/abdallah-elfkey-315858357/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer text-center">
+    <p class="mb-0">© 2026 Abdallah Elfeky. All rights reserved.</p>
+</footer>
+
+    <section class="light-container d-none">
+        <div class="imge-box">
+            <i id="prev" class="fa-solid fa-angles-left"></i>
+            <i id="next" class="fa-solid fa-angles-right"></i>
+            <i id="close-imge" class="fa-solid fa-xmark"></i>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
